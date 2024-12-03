@@ -1,0 +1,543 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000800;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aqua;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hidden by default, visible on small screens */
+}
+
+
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    height: 100%; 
+    border-color: #000800;
+    background-color: #000800;
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Shown only when menu is open */
+}
+
+.nav-links.open {
+    right: 0; /* Slide into view */
+}
+
+.nav-links.open .close-button {
+    display: block; /* Show the close button when menu is open */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.btn button {
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn button:hover {
+    background-color: #e55b00;
+}
+
+
+
+
+
+/* header{
+    display: flex;
+    margin: 0;
+    gap: 8rem;
+    justify-content:space-between;
+    margin: 1rem;
+}
+
+header h1{
+    color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 7px;
+}
+
+nav{
+  display: flex;
+}
+
+nav ol{
+    display: flex;
+    color: aqua;
+ 
+}
+
+nav ol li{
+    padding: 16px;
+}
+
+nav ol a{
+    text-decoration: none;
+    color: #bcbcbc;
+    margin: 5px;
+} */
+
+.btn{
+    margin-top: 10px;  
+}
+
+button{
+    background-color: #000800;
+    color: aqua;
+    border: 2px solid aqua;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn a{
+    color: aqua;
+    text-decoration: none;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+}
+
+aside{
+    width: 5%;
+    position: relative;
+}
+
+main{
+    width: 90%;
+}
+
+main p{
+    color: aqua;
+    font-family: cursive;
+}
+
+main h1{
+    color: #bcbcbc;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 2rem;
+}
+
+main h2{
+    color: #968e8e;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+main h4{
+    color:#bcbcbc;
+    max-width: 50%;
+    text-align: justify;
+    padding-top: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+main button{
+    margin: 1rem  0rem 0rem 7rem;
+    padding: 12px;
+}   
+
+.about_me{
+    display: flex;
+    width: 50%;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.about_me ol{
+    color: aqua;
+}
+
+.about_me  a{
+    color: #bcbcbc;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 8px;
+} 
+
+.about{
+    display: flex;
+    width: 100%;
+    gap: 10rem;
+}
+
+.about_text{
+    width: 50%;
+}
+
+
+.about_text p{
+    text-align: justify;
+    color: #bcbcbc;
+}
+
+.about_image{
+    width: 50%;
+}
+.image{
+    width: 50%;
+    height: 45vh;
+    border: 2px solid aqua;
+    border-radius: 5px;
+}
+
+.image img{
+    border-radius: 8px;
+    margin:1rem;
+}
+
+:hover img{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.about_text nav{
+    display: flex;
+    gap: 8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.about_text li{
+    color: aqua;
+}
+
+.work_experience{
+    display: flex;
+    width: 50%;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.work_experience ol{
+    color: aqua;
+}
+
+.work_experience li  a{
+    color: #bcbcbc;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 8px;
+} 
+.project_item{
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.item{
+    width: 25%;
+    height: 55vh;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.item img{
+    background-size: cover;
+    width: 100%;
+}
+
+.item a{
+    padding: 5px;
+    text-decoration: none;
+    color: #000800;
+}
+
+.item p{
+    font-size: 10px;
+    color: black;
+    padding: 5px;
+}
+
+footer{
+  margin: 0;
+  margin-top: 5rem;
+}
+
+.foot{
+    display: flex;
+    gap: 5rem;
+}
+.contact-class{
+    width: 50%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-class span{
+    display: flex;
+    color: aqua;
+    padding: 2px;
+}
+.text-class{
+    width: 50%;
+    margin-left: 30%;
+}
+
+form{
+    width: 100%;
+}
+
+input{
+    width: 90%;
+    height: 25vh;
+     outline: 0;
+     padding: 5px;
+}
+.text-class button{
+    width: 90%;
+    background-color: aqua;
+    color: black;
+    margin-left: 0;
+    border-radius:0;
+    margin-top: 10px;
+}
+
+.line{
+    width: 100%;
+    background-color: aqua;
+    margin-top: 2rem;
+}
+
+.logo-class{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 8px;
+}
+.logo{
+    color: aqua;
+     padding: 4px;
+     cursor: pointer;
+}
+
+.logo ion-icon{
+  color:aqua;
+  padding-left: 10px;
+}
+
+.copyright-class p{
+
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    aside{
+        width: 0%;
+    }
+
+    .toggle-button {
+        display: block; /* Show the toggle button on small screens */
+    }
+
+    .nav-links {
+        display: flex; /* Ensure it’s still flex for layout */
+    }
+
+    .header-container h1{
+        margin: 0;
+        font-size: 15px;
+    }
+    main{
+        width: 100%;
+    }
+
+    main p{
+        padding: 10px;
+    }
+
+    main h1{
+        font-size: 30px;
+        width: 95%;
+        padding: 10px;
+    }
+    main h2{
+        font-size: 30px;
+        width: 95%;
+        padding: 10px;
+    }
+    main h4{
+        margin: 0;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+    .about_text{
+        width: 100%;
+        margin:0;
+        padding: 0;
+    }
+
+    .about_me{
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .about_text p{
+        font-size: 12px;
+        padding:10px;
+        margin: 0;
+    }
+
+    .about_text nav{
+        display: flex;
+        gap: 8rem;
+        margin-left: 2rem;
+    }
+
+    .about_text li{
+        color: aqua;
+    }
+
+    .about_image{
+        margin: 0;
+        width: 95%;
+        margin-top: -8rem;
+    }
+    .image{
+        width: 90%;
+        margin: 1rem;
+        height: fit-content;
+    }
+    .image img{
+        width: 98%;
+        height: fit-content;
+
+    }
+
+    .project_item{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .item{
+        width: 90%;
+        height: fit-content;
+        margin: 1rem;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .item span{
+        display: flex;
+        font-size: 20px;
+    }
+
+    .foot{
+        flex-direction: column;
+    }
+
+    .contact-class{
+        width: 100%;
+       margin: 0;
+    }
+    .contact-class span{
+        margin-left: 10%;
+    }
+
+    .text-class{
+        width: 100%;
+        margin: 0;
+    }
+    input{
+        margin-left: 5%;
+    }
+    .text-class button{
+        margin-left: 5%;
+    }
+    .line{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .logo-class{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        text-align: center;
+    }
+
+    .copyright-class p{
+        text-align: center;
+        font-weight: lighter;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+}

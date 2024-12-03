@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>DEV_OLUTAYO</h1>
+
+            <!-- Toggle Button for Opening the Menu -->
+            <button class="toggle-button" id="toggleButton">
+                ☰
+            </button>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav-links" id="navLinks">
+            <!-- Close Button -->
+            <button class="close-button" id="closeButton">✖</button>
+            
+            <ol>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+            
+            <div class="btn">
+                <a href="file:///C:/Users/PC/Downloads/Olaseinde%20Olusola%20Curriculum%20Vitae.pdf%20(updated)%20(1).pdf">
+                    <button type="button">Resume</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const closeButton = document.getElementById("closeButton");
+        const navLinks = document.getElementById("navLinks");
+    
+        // Function to open the menu
+        function openMenu() {
+            navLinks.classList.add("open");
+        }
+    
+        // Function to close the menu
+        function closeMenu() {
+            navLinks.classList.remove("open");
+        }
+    
+        // Event listeners for the buttons
+        toggleButton.addEventListener("click", openMenu);
+        closeButton.addEventListener("click", closeMenu);
+    </script>
+    
+    <div class="container">
+        <aside>
+                    
+        </aside>
+
+        <main>
+            <p>Hi, my name is</p>
+            <h1>Olaseinde Olusola.</h1>
+            <h2>I build things for the Web.</h2>
+
+            <h4>I am a Fullstack Web Developer specializes in building exceptional digital experience with tools such as Html, CSS, JavaScript, PHP, Laravel, Nodejs, React, Express, MongoDB and MySQL.</h4>
+
+            <a href="file:///C:/Users/PC/Downloads/Olaseinde%20Olusola%20Curriculum%20Vitae.pdf%20(updated)%20(1).pdf"><button type="button">Download Resume...</button></a>
+
+            <sention class="about_section">
+
+                <div class="about_me">
+                  <span>
+                    <ol>
+                        <li>1<a>About Me</a></li>
+                    </ol>
+
+                  </span>
+                </div>
+
+                <div class="about">
+                    <div class="about_text">
+                       <p>
+                        Hello!, my name is Olaseinde Olusola Temitayo and I am passionate about creating things that live on internet. My interest in web development started back in 2021 during my mandatory NYSC in Benue state, Nigeria during the camp SEAD program.
+
+                        Fast Forward till today, I have had the privilege to work with a start up firm, real Estate company, and IT firm. My main focus these days is building accessible, inclusive products and solving real world challenges.
+                       </p>
+
+                       <p>Here are the few technologies I have worked with recently:</p>
+
+                       <nav>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Nodejs</li>
+                            <li>Express</li>
+                        </ul>
+
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Typescript</li>
+                            <li>MongoDB, MySQL</li>
+                        </ul>
+                       </nav>
+                    </div>
+
+                    <div class="about_image">
+                        <div class="image">
+                            <img src="./sola.jpg" alt="" width="270" height="290">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work_section">
+                <div class="about_me">
+                    <span>
+                      <ol>
+                          <li>2<a>Projects</a></li>
+                      </ol>
+  
+                    </span>
+                  </div>
+                
+                  <div class="project_item">
+                     <div class="item">
+                        <img src="xooth_.png" alt="" width="" height="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime animi officia! Quos corporis aspernatur, perferendis quidem facere accusantium vel voluptatum est ut quis ducimus? Exercitationem autem in adipisci unde?</p>
+                        <span>
+                            <a href="https://evritincars.com/"><ion-icon name="globe-outline"></ion-icon></a>
+                            <a href="https://github.com/OluTayo-Dev/back-everitin"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-codepen"></ion-icon></a>
+                        </span>
+                     </div>
+                     <div class="item">
+                        <img src="xooth_.png" alt="" width="" height="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime animi officia! Quos corporis aspernatur, perferendis quidem facere accusantium vel voluptatum est ut quis ducimus? Exercitationem autem in adipisci unde?</p>
+                        <span>
+                            <a href="https://www.flexileinvestment.com/"><ion-icon name="globe-outline"></ion-icon></a>
+                            <a href="https://github.com/OluTayo-Dev/flexile-Back"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-codepen"></ion-icon></a>
+                        </span>
+                     </div>
+                     <div class="item">
+                        <img src="xooth_.png" alt="" width="" height="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime animi officia! Quos corporis aspernatur, perferendis quidem facere accusantium vel voluptatum est ut quis ducimus? Exercitationem autem in adipisci unde?</p>
+                        <span>
+                            <a href="https://www.xooth.net/"><ion-icon name="globe-outline"></ion-icon></a>
+                            <a href="https://github.com/OluTayo-Dev/xooth-frontend"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-codepen"></ion-icon></a>
+                        </span>
+                     </div>
+                     <div class="item">
+                        <img src="xooth_.png" alt="" width="" height="" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime animi officia! Quos corporis aspernatur, perferendis quidem facere accusantium vel voluptatum est ut quis ducimus? Exercitationem autem in adipisci unde?</p>
+                        <span>
+                            <a href="https://www.ziltfarms.com/"><ion-icon name="globe-outline"></ion-icon></a>
+                            <a href="https://github.com/OluTayo-Dev/ziltfarms"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-codepen"></ion-icon></a>
+                        </span>
+                     </div>
+                  </div>
+
+            </section>
+
+            <footer>
+                <div class="about_me">
+                    <span>
+                      <ol>
+                          <li>3<a>Contact Me</a></li>
+                      </ol>
+  
+                    </span>
+                  </div>
+                <div class="foot">
+                      <div class="contact-class">
+                         <span>
+                            <ion-icon name="call-outline"></ion-icon>
+                            <p>+2347064219422</p>
+                         </span>
+    
+                         <span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <p>olusolatemitayo656@gmail.com</p>
+                         </span>
+                         <span>
+                            <ion-icon name="logo-github"></ion-icon>
+                            <p>OluTayo-Dev</p>
+                         </span>
+                         <span>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <p>@Titemitayo442</p>
+                         </span>
+                      </div>
+    
+                      <div class="text-class">
+                        <form>
+                            <input type="text" placeholder="Enter Message">
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                     </div>
+    
+                </div>
+            </footer>
+            <hr  class="line" />
+            <div class="logo-class">
+                 <div class="logo">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                 </div>
+                 <div class="copyright-class">
+                    <p>&copy;Dev-OluTayo web solution 2024</p>
+                 </div>
+            </div>
+        </main>
+        <aside>
+
+        </aside>
+        
+    </div>
+</body>
+</html>
